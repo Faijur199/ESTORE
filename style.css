@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header{
+    height: 100px;
+    width: 100%;
+    background-color: brown;
+}
+
+#logo, #navbar, #login_panel{
+    display: inline-block;
+}
+
+#navbar a, #logo_panel a{
+    color: chocolate;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#logo{
+    width: 100px;
+}
+#navbar{
+    width: 500px;
+    background-color: aliceblue;
+    margin-top: 20px;
+}
+#navbar a{
+    padding: 10px;
+}
+
+#login_panel{
+    float: right;
+    margin-top: 20px;
+}
+
+.content{
+    height: 400px;
+    width: 100%;
+    background-color: aqua;
+}
+
+#login_form{
+    height: 160px;
+    width: 300px;
+    background-color: burlywood;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#login_form input{
+    padding: 20px;
+}
+
+#login_form div{
+    margin-top: 15px;
+}
+
+#footer{
+    height: 40px;
+    width: 100%;
+    background-color: blueviolet;
+}
