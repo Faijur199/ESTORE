@@ -2,8 +2,8 @@
 <div class="content">
     <form action="login_process.php" method="post">
         <div>
-            <label>Username</label>
-            <input type="text" name="username">
+            <label>Email</label>
+            <input type="text" name="email">
         </div>
         <div>
             <label>Passowrd</label>

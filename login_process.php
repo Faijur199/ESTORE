@@ -1,7 +1,15 @@
 <?php
+require_once "database.php";
 session_start();//must be started at the top of the file
-$username = $_POST["username"];
+$email = $_POST["email"];
 $password =$_POST["password"];
+
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+$query = "select * from users where email ='$email'";
+$res = mysqli_query($db_connection, $query);
+$count = mysqli_num_rows($res);
+echo $count;
+die;
 
 if($username == "admin" & $password=="123"){
     
