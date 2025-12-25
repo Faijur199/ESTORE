@@ -1,65 +1,236 @@
+/* =========================
+   RESET & BASE
+========================= */
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    min-height: 100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
 #header{
     height: 100px;
     width: 100%;
     background-color: brown;
+    padding: 0 30px;
 }
 
-#logo, #navbar, #login_panel{
+#logo,
+#navbar,
+#login_panel{
     display: inline-block;
+    vertical-align: middle;
 }
 
-#navbar a, #logo_panel a{
-    color: chocolate;
-    text-decoration: none;
-    font-size: 20px;
-}
-
+/* Logo */
 #logo{
-    width: 100px;
-}
-#navbar{
-    width: 500px;
-    background-color: aliceblue;
-    margin-top: 20px;
-}
-#navbar a{
-    padding: 10px;
+    width: 150px;
+    line-height: 100px;
 }
 
+#logo a{
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Navbar */
+#navbar{
+    margin-left: 40px;
+    line-height: 100px;
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#navbar a:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Login panel */
 #login_panel{
     float: right;
-    margin-top: 20px;
+    line-height: 100px;
 }
 
+#login_panel a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 15px;
+    padding: 8px 14px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#login_panel a:hover{
+    background-color: #fff;
+    color: brown;
+}
+
+/* =========================
+   CONTENT AREA
+========================= */
 .content{
-    height: 400px;
     width: 100%;
-    background-color: aqua;
+    min-height: calc(100vh - 160px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* =========================
+   FORM DESIGN
+========================= */
+.content form{
+    background: #ffffff;
+    width: 380px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.content form div{
+    margin-bottom: 15px;
+}
+
+.content label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+/* Inputs */
+.content input[type="text"],
+.content input[type="email"],
+.content input[type="number"],
+.content input[type="password"]{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.content input:focus{
+    border-color: #0072ff;
+    box-shadow: 0 0 5px rgba(0,114,255,0.4);
+}
+
+/* Submit button */
+.content input[type="submit"]{
+    width: 100%;
+    padding: 11px;
+    background: #0072ff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content input[type="submit"]:hover{
+    background: #0056cc;
+}
+
+/* Error message */
+#error{
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* =========================
+   LOGIN FORM (OPTIONAL BOX)
+========================= */
 #login_form{
     height: 160px;
     width: 300px;
     background-color: burlywood;
     border-radius: 15px;
     text-align: center;
+    padding: 15px;
 }
 
 #login_form input{
-    padding: 20px;
+    padding: 10px;
+    width: 90%;
 }
 
 #login_form div{
-    margin-top: 15px;
+    margin-top: 12px;
 }
 
-#footer{
-    height: 40px;
-    width: 100%;
-    background-color: blueviolet;
+/* =========================
+   FOOTER
+========================= */
+footer{
+    background-color: purple;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
 }
+
+/* =========================
+   DASHBOARD WELCOME AREA
+========================= */
+#welcome_box{
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(135deg, #0d6efd, #00c6ff);
+    color: #fff;
+}
+
+#welcome_box h2{
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+#welcome_box p{
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* =========================
+   DASHBOARD CONTENT AREA
+========================= */
+.dashboard-content{
+    min-height: 70vh;
+    background-color: #f4f6f9;
+    padding: 30px;
+}
+
+/* =========================
+   FOOTER (FIXED & CLEAN)
+========================= */
+footer{
+    background-color: #1e1e2f;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+}
+

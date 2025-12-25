@@ -8,7 +8,7 @@
                 if(isset($_GET['name_empty']) & !empty($_GET['name_empty'])){
             ?>
             <span id="error">Please enter your full name</span>
-            <?php } ?>
+            <?php } ?>  
         </div>
         <div>
             <label>Email</label>

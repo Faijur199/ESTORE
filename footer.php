@@ -1,5 +1,6 @@
-<div id="footer">
-    &copy;2025
-</div>
+<footer>
+    © 2025 estore | All Rights Reserved
+</footer>
+
 </body>
 </html>
