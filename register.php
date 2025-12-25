@@ -1,6 +1,6 @@
 <?php include "header.php"; ?>
 <div class="content">
-    <form action="register_process.php" method="$_POST">
+    <form action="register_process.php" method="POST">
         <div>
             <label>Name</label>
             <input type="text" name="full_name" id="full_name">
