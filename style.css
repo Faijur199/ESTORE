@@ -234,3 +234,29 @@ footer{
     font-size: 14px;
 }
 
+.product-container{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: grey;
+    border: 2px dashed black;
+    align-items: center;
+    justify-content: center;
+}
+
+.product{
+    height: 200px;
+    width: 200px;
+    background-color: #333;
+    color: aliceblue;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.product img{
+    width: 100px;
+    height: 100px;
+}
+

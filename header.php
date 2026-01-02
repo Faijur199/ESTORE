@@ -14,7 +14,7 @@
     </div>
     <div id="navbar">
         <a href="index.php">Home</a>
-        <a href="#">services</a>
+        <a href="product.php">Products</a>
         <a href="#">Contact US</a>
     </div>
     <?php if(!empty($_SESSION['user'])){ ?>
