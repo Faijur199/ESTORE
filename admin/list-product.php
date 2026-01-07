@@ -1,10 +1,10 @@
 <?php
-include "header.php";
+include "../header.php";
 require "../database.php";
 ?>
 <div class="content">
     <div>products</div>
-    <div class="product-container">
+    <div class="product_container">
         <table border="1">
             <tr>
                 <th>SN</th>
@@ -21,11 +21,11 @@ require "../database.php";
                 <td><?php echo $product['name']; ?></td>
                 <td><?php echo $product['description']; ?></td>
                 <td><?php echo $product['price']; ?></td>
-                <td><a href="edit-product-form.php">Edit</a></td>
+                <td><a href="edit-product-form.php?product_id=<?php echo $product['id']; ?>">Edit</a></td>
             </tr>
         <?php
         }
         ?>
     </div>
 </div>
-<?php include "footer.php"; ?>
+<?php include "../footer.php"; ?>
