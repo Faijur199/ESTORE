@@ -1,3 +1,5 @@
 <div class="content">
-    This is a content page
+    <h1>Welcome to E-Store!</h1>
+<p>  Explore a wide range of products and shop smarter every day with E-Store.</p>
+
 </div>
